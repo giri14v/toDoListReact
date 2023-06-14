@@ -1,38 +1,67 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: aquamarine ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  height: 25px;
+  border-radius: 6px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.deletebutton{
+  background-color: red;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.completebutton{
+  background-color: green;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.addbutton{
+  background-color: blue;
+  color: white;
+}
+.addTask{
+  background-color: rgb(124, 144, 146);
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  border-radius: 30px;
+}
+input{
+  height: 30px;
+  width: 250px;
+  margin-right: 15px;
+  border: 2px solid bisque;
+  border-radius: 10px;
+  padding: 3px;
+  box-shadow: 5px 5px 3px 3px wheat;
+}
+.task{
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 5px;
+  box-shadow: 3px 3px 2px 2px black;
+}
+button:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+@media(max-width: 450px){
+  .addTask{
+    width: 300px;
   }
-  to {
-    transform: rotate(360deg);
+  .task{
+    width: 300px;
+  }
+  .addbutton{
+    margin-top: 15px;
   }
 }
